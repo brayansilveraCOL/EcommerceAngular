@@ -17,6 +17,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { LayoutModule } from '@angular/cdk/layout';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatStepperModule} from '@angular/material/stepper';
 @NgModule({
   declarations: [],
   imports: [
@@ -38,6 +39,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     MatSortModule,
     LayoutModule,
     MatFormFieldModule,
+    MatStepperModule,
  
   ],
   exports: [
@@ -58,6 +60,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     MatSortModule,
     LayoutModule,
     MatFormFieldModule,
+    MatStepperModule,
   
   ]
 })
