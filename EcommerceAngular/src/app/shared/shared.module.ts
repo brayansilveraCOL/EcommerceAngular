@@ -8,6 +8,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import {MaterialModule} from '../material/material.module';
 import {CartComponent} from './components/cart/cart.component';
+import { DeleteRepeatsPipe } from './pipes/delete-repeats.pipe';
+import { RepeatNumberPipePipe } from './pipes/repeat-number-pipe.pipe';
 
 @NgModule({
   declarations: [
@@ -16,21 +18,22 @@ import {CartComponent} from './components/cart/cart.component';
     HeaderComponent,
     FooterComponent,
     CartComponent,
-    
+    DeleteRepeatsPipe,
+    RepeatNumberPipePipe,
   ],
   exports: [
     ExponentialPipe,
     HighlightDirective,
     HeaderComponent,
     FooterComponent,
-    
+    DeleteRepeatsPipe,
+    RepeatNumberPipePipe,
   ],
   imports: [
     CommonModule,
     RouterModule,
     MaterialModule,
-    ReactiveFormsModule,
-    
+    ReactiveFormsModule, 
   ]
 })
 export class SharedModule { }

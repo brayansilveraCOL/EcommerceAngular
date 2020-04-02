@@ -38,6 +38,14 @@ const routes: Routes = [
         canActivate: [AdminGuard],
         loadChildren: () => import('./demo/demo.module').then(m => m.DemoModule)
       },
+      {
+        path: 'login',
+        loadChildren: () => import('./login/login.module').then(m => m.LoginModule)
+      },
+      {
+        path: 'signup',
+        loadChildren: () => import('./signup/signup.module').then(m => m.SignupModule)
+      },
     ]
   },
 

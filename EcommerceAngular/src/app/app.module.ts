@@ -26,8 +26,6 @@ import {HttpClientModule} from '@angular/common/http';
     BrowserAnimationsModule,
     AdminModule,
     HttpClientModule,
-    
-
   ],
   providers: [],
   bootstrap: [AppComponent]
